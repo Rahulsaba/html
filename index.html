@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img {
+            max-width: 100%;
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+        }
+
+        .yo {
+            display: flex;
+            width: 500px;
+            overflow-x: scroll;
+            scroll-snap-type:x mandatory;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>heloworld</h2>
+            <div class="yo">
+                <img src="img/img_1.jpg" alt="img" loading="lazy">
+                <img src="img/img_2.jpg" alt="img" loading="lazy">
+                <img src="img/img_3.jpg" alt="img" loading="lazy">
+                <img src="img/img_4.jpg" alt="img" loading="lazy">
+                <img src="img/img_5.jpg" alt="img" loading="lazy">
+                <img src="img/img_6.jpg" alt="img" loading="lazy">
+            </div>
+            <marquee direction="left" width="100%" height="100%" behavior="alternate" loop="true">
+                <marquee behavior="alternate">This text will bounce</marquee>
+            </marquee>
+        </section>
+        <section>
+            1
+            <button popovertarget="click">click</button>
+            <div id="click" popover class="pos" contenteditable="true">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aperiam labore commodi, saepe
+                voluptatum veritatis eligendi illo. Reprehenderit molestiae, saepe, ratione voluptatum possimus quaerat
+                magnam velit ea nesciunt, nemo corporis.
+                <button popovertarget="click" popovertargetaction="hide">
+                    hide
+                </button>
+            </div>
+        </section>
+        <section>2
+            <details name="accordion" open>hello
+                <summary>world</summary>
+            </details>
+        </section>
+        <section>3
+            <div class="parent">
+                <div>1
+                    <h2>hello world</h2>
+                    <p>loream</p>
+                </div>
+                <div>2
+                    <h2>hello world</h2>
+                    <p>loream</p>
+                </div>
+                <div>3
+                    <h2>hello world</h2>
+                    <p>loream</p>
+                </div>
+                <div>4
+                    <h2>hello world</h2>
+                    <p>loream</p>
+                </div>
+            </div>
+        </section>
+        <section>4</section>
+        <section>
+            5
+            <form>
+                <input type="text" required>
+                <input type="email" required>
+                <input type="number" required max="10">
+                <input type="submit" value="submit">
+            </form>
+        </section>
+        <section>6
+            <div style="display: flex;">
+                <h1>hello world</h1>
+                <p style="line-height: 8rem;--color:green">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ut quo ipsum adipisci vitae fuga
+                    tenetur, inventore magni, hic deserunt autem, modi mollitia. Odio et, obcaecati eos totam
+                    repellendus incidunt!
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="grid gap_5">
+            <div>
+                1
+                <p class="name">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sequi sit voluptas dolores
+                    beatae necessitatibus hic odio modi molestiae similique commodi ipsa officia qui quod, voluptates
+                    voluptatibus. Dolor, maxime nesciunt.
+                </p>
+            </div>
+            <div>
+                2
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sequi sit voluptas dolores
+                    beatae necessitatibus hic odio modi molestiae similique commodi ipsa officia qui quod, voluptates
+                    voluptatibus. Dolor, maxime nesciunt.
+                </p>
+            </div>
+            <div>
+                3
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sequi sit voluptas dolores
+                    beatae necessitatibus hic odio modi molestiae similique commodi ipsa officia qui quod, voluptates
+                    voluptatibus. Dolor, maxime nesciunt.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- https://dev.to/devsyedmohsin/22-useful-css-tips-and-tricks-every-developer-should-know-13c6 -->
