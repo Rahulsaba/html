@@ -105,3 +105,7 @@ h2 {
         width: 100%;
     }
 }
+
+.mask{
+    mask-image: linear-gradient(to right, transparent,#000, transparent);
+}
